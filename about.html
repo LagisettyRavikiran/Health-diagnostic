@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f97509;
+        }
+        .header{
+            text-align: center;
+            padding:10px;
+        }
+        .main{
+            text-align: center;
+        }
+
+        .developers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .developer {
+            width: 230px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .developer img {
+            max-width: 40%;
+            border-radius: 50%;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+           text-align: center;
+        }
+
+        .btn-container a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #0077B5, #005885);
+            color: #fff;
+            transition: background 0.3s;
+        }
+
+        .btn-container a.gmail {
+            background: linear-gradient(to bottom, #D14836, #C53727);
+        }
+
+        .btn-container a:hover {
+            background: linear-gradient(to bottom, #005885, #004477);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>About US</h1>
+    </div>
+    <div class="main">
+        <h2>Team Details</h2>
+    </div>
+    <div class="developers">
+        <div class="developer">
+            <img src="{{ url_for('static', filename='99210041072.jpg')}}" alt="Lagisetty Ravikiran">
+            <h2>Lagisetty Ravikiran</h2>
+            <p>9392701968</p>
+            <div class="btn-container">
+                <a href="https://www.linkedin.com/in/lagisetty-ravikiran-a308a3216/" target="_blank">LinkedIn</a>
+                <a class="gmail" href="mailto:kiranlravi8@gmail.com">Gmail</a>
+            </div>
+        </div>
+        <div class="developer">
+            <img src="{{ url_for('static', filename='99210041072.jpg')}}" alt="Lagisetty Ravikiran">
+            <h2>Kota Venkata Pavan Teja</h2>
+            <p>9492730330</p>
+            <div class="btn-container">
+                <a href="https://www.linkedin.com/in/pavanteja-kv-8a3bb1267/" target="_blank">LinkedIn</a>
+                <a class="gmail" href="mailto:kvpavanteja@gmail.com">Gmail</a>
+            </div>
+        </div>
+        <div class="developer">
+            <img src="{{ url_for('static', filename='99210041072.jpg')}}" alt="Lagisetty Ravikiran">
+            <h2>Kodamarri Venkata Reddy</h2>
+            <p>9492730330</p>
+            <div class="btn-container">
+                <a href="https://www.linkedin.com/in/pavanteja-kv-8a3bb1267/" target="_blank">LinkedIn</a>
+                <a class="gmail" href="mailto:kvpavanteja@gmail.com">Gmail</a>
+            </div>
+        </div>
+        <div class="developer">
+            <img src="{{ url_for('static', filename='99210041072.jpg')}}" alt="Lagisetty Ravikiran">
+            <h2>Oleti Bobby Sai Vignesh</h2>
+            <p>9492730330</p>
+            <div class="btn-container">
+                <a href="https://www.linkedin.com/in/pavanteja-kv-8a3bb1267/" target="_blank">LinkedIn</a>
+                <a class="gmail" href="mailto:kvpavanteja@gmail.com">Gmail</a>
+            </div>
+        </div>
+        <div class="developer">
+            <img src="{{ url_for('static', filename='99210041072.jpg')}}" alt="Lagisetty Ravikiran">
+            <h2>G.V.S.S.Mouli</h2>
+            <p>9492730330</p>
+            <div class="btn-container">
+                <a href="https://www.linkedin.com/in/pavanteja-kv-8a3bb1267/" target="_blank">LinkedIn</a>
+                <a class="gmail" href="mailto:kvpavanteja@gmail.com">Gmail</a>
+            </div>
+        </div>
+        <div class="developer">
+            <img src="{{ url_for('static', filename='99210041072.jpg')}}" alt="Lagisetty Ravikiran">
+            <h2>Batchu Gana Sampath</h2>
+            <p>9492730330</p>
+            <div class="btn-container">
+                <a href="https://www.linkedin.com/in/pavanteja-kv-8a3bb1267/" target="_blank">LinkedIn</a>
+                <a class="gmail" href="mailto:kvpavanteja@gmail.com">Gmail</a>
+            </div>
+        </div>
+
+    </div><br>
+    <div class="btn-container" >
+        <a href="/home">Home</a>
+    </div>
+    <div class="footer">
+        <h3 style="text-align: center;">Made by Lagisetty Ravikiran</h3>
+        <p style="text-align: center;">@2023</p>
+    </div>
+</body>
+</html>
